@@ -22,6 +22,7 @@ var imagemin     = require("gulp-imagemin");
 var pngquant     = require('imagemin-pngquant');
 var gulpCopy     = require('gulp-copy');
 var inject       = require('gulp-inject');
+var nodemon      = require('gulp-nodemon');
 
 
 /**
@@ -55,19 +56,35 @@ gulp.task('sass', function() {
 
 /**
 *
+* Nodemon
+*
+* The ultimate answer to our server not starting
+**/
+
+gulp.task('nodemon', function(cb) {
+  var started = false;
+
+  return nodemon({
+    script: 'server.js'
+  }).on('start', function() {
+    if(!started){
+      cb();
+      started=true;
+    }
+  })
+});
+
+/**
+*
 * BrowserSync.io
 * - Watch CSS, JS & HTML for changes
 * - View project at: localhost:3000
 *
 **/
-gulp.task('browser-sync', function() {
-  browserSync.init(['dist/**/css/*.css', 'dist/**/*.js', 'src/**/*.html'], {
-    server: {
-      proxy: "http://localhost:8080",
-      port: 3000
-      // baseDir: "./",
-      // index: "dist/public/views/index.html"
-    }
+gulp.task('browser-sync', ['nodemon'], function() {
+  browserSync.init(null, {
+    proxy: "http://localhost:8080",
+    files: ["dist/public/**/*.*"]
   });
 });
 
