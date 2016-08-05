@@ -8,6 +8,7 @@
 * Not using gulp-load-plugins as it is nice to see whats here.
 *
 **/
+
 var gulp         = require('gulp');
 var sass         = require('gulp-sass');
 var browserSync  = require('browser-sync');
@@ -22,6 +23,7 @@ var pngquant     = require('imagemin-pngquant');
 var gulpCopy     = require('gulp-copy');
 var inject       = require('gulp-inject');
 
+
 /**
 *
 * Styles
@@ -32,8 +34,6 @@ var inject       = require('gulp-inject');
 * - Autoprefixer
 *
 **/
-
-
 
 gulp.task('sass', function() {
   gulp.src('src/assets/scss/global.scss')
@@ -50,7 +50,6 @@ gulp.task('sass', function() {
   .pipe(prefix('last 2 versions', '> 1%', 'ie 8', 'Android 2', 'Firefox ESR', 'ie 11'))
   .pipe(plumber())
   .pipe(gulp.dest('dist/assets/css'));
-
   // MATERIALIZE
 });
 
@@ -64,7 +63,10 @@ gulp.task('sass', function() {
 gulp.task('browser-sync', function() {
   browserSync.init(['dist/**/css/*.css', 'dist/**/*.js', 'src/**/*.html'], {
     server: {
-      baseDir: './dist'
+      proxy: "http://localhost:8080",
+      port: 3000
+      // baseDir: "./",
+      // index: "dist/public/views/index.html"
     }
   });
 });
@@ -81,22 +83,15 @@ gulp.task('scripts', function() {
   
   //source
   gulp.src('src/**/*.js')
-
   //lint
   .pipe(jshint())
   .pipe(jshint.reporter(stylish))
-
   //uglify
   .pipe(uglify())
-
   //rename
-  .pipe(rename({
-    suffix: ".min"
-  }))
-
-  .pipe(gulp.dest('dist/'))
+  .pipe(rename({suffix: ".min"}))
+  .pipe(gulp.dest('dist'))
 });
-
 
 
 /**
@@ -123,10 +118,10 @@ gulp.task('images', function () {
 **/
 
 gulp.task('copy', function() {
-    gulp.src('src/**/*.html')
-    .pipe(gulp.dest('dist'));
-    // gulp.src('src/lib/**/*')
-    // .pipe(gulp.dest('dist/lib'));
+    gulp.src('src/public/views/**/*.html')
+    .pipe(gulp.dest('dist/public/views'));
+    gulp.src('src/public/lib/**/*')
+    .pipe(gulp.dest('dist/public/lib'));
 });
 
 
@@ -137,7 +132,7 @@ gulp.task('copy', function() {
 * - Watchs for file changes for images, scripts and sass/css
 *
 **/
-gulp.task('default', ['sass', 'scripts', 'images', 'copy', 'browser-sync'], function () {
+gulp.task('default', ['sass', 'scripts', 'images', 'copy', 'browser-sync'], function() {
   gulp.watch('src/assets/css/**/*.scss', ['sass']);
   gulp.watch('src/**/*.js', ['scripts']);
   gulp.watch('src/assets/images/*', ['images']);
