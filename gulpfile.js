@@ -36,8 +36,8 @@ var inject       = require('gulp-inject');
 
 
 gulp.task('sass', function() {
-  gulp.src('src/assets/css/styles.scss')
-  .pipe(inject(gulp.src(['**/*.scss'], {read: false, cwd: 'src/assets/css'}), {
+  gulp.src('src/assets/scss/global.scss')
+  .pipe(inject(gulp.src(['**/*.scss'], {read: false, cwd: 'src/assets/scss'}), {
     starttag: '/* IMPORTS */',
     endtag: '/* Fin des IMPORTS */',
     transform: function (filepath) {
@@ -50,6 +50,8 @@ gulp.task('sass', function() {
   .pipe(prefix('last 2 versions', '> 1%', 'ie 8', 'Android 2', 'Firefox ESR', 'ie 11'))
   .pipe(plumber())
   .pipe(gulp.dest('dist/assets/css'));
+
+  // MATERIALIZE
 });
 
 /**
