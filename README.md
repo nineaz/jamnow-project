@@ -33,7 +33,7 @@ Le dossier **source** (src pour les intimes), est notre espace de travail. C'est
 
 2. Il vérifie et minifie tous nos Javascripts
 
-3. Il copie tels quels nos fichiers HTML
+3. Il copie tels quels nos fichiers HTML, ainsi que nos Librairies intégrées (lib pour les intimes)
 
 4. Il compresse nos images pour qu'elles prennent moins de place
 
