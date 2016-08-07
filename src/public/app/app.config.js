@@ -8,7 +8,7 @@ jamApp.config(['$stateProvider', '$urlRouterProvider',function($stateProvider, $
 	$stateProvider
 	.state('home',  {
 		url: "/",
-		templateUrl: "public/views/pages/home.html"
+		templateUrl: "../views/pages/home.html"
 	});
 
 }]);

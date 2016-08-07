@@ -1,1 +1,1 @@
-var jamApp = angular.module('jamnow', []);
+var jamApp = angular.module('jamnow', ['ui.router']);
