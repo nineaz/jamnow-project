@@ -37,6 +37,7 @@ var nodemon      = require('gulp-nodemon');
 **/
 
 gulp.task('sass', function() {
+  console.log('SASS processing');
   gulp.src('src/public/assets/scss/global.scss')
   .pipe(inject(gulp.src(['**/*.scss'], {read: false, cwd: 'src/public/assets/scss'}), {
     starttag: '/* IMPORTS */',
