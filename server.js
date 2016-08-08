@@ -7,7 +7,7 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 
 // MongoDB
-mongoose.connect('mongodb://192.168.1.195:27017/db_jamnow');
+mongoose.connect('mongodb://localhost/db_jamnow');
 
 // DYnamically serving our RESTful api I guess ?
 
