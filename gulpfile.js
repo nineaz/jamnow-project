@@ -150,7 +150,7 @@ gulp.task('copy', function() {
 *
 **/
 gulp.task('default', ['sass', 'scripts', 'images', 'copy', 'browser-sync'], function() {
-  gulp.watch('src/assets/css/**/*.scss', ['sass']);
+  gulp.watch('src/public/assets/scss/**/*.scss', ['sass']);
   gulp.watch('src/**/*.js', ['scripts']);
   gulp.watch('src/assets/images/*', ['images']);
   gulp.watch('src/**/*.html', ['copy']);

@@ -11,7 +11,7 @@
           
     <!-- IMPORTED CSS -->
     <!-- OUR CSS -->
-    <link rel="stylesheet" type="text/css" href="../../assets/css/global.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/global.css">
     <!-- LIBRAIRIES JS -->
     <script type="text/javascript" src="../lib/js/angular.min.js"></script>
     <script type="text/javascript" src="../lib/js/angular-ui-router.min.js"></script>
@@ -24,9 +24,6 @@
     <!-- SERVICES -->
 </head>
 <body ng-app="jamnow">
-    <div ng-controller="MainController as main">
-        <h1> {{main.coucou}} , {{hello}} </h1>  
-    </div>
     <div class="background-image">
       <nav class="nav">
         <div class="nav-wrapper">
@@ -48,31 +45,37 @@
       </nav>
     </div>
     <!-- Renders the view indicated by our config file -->
-     <footer class="page-footer">
-              <div class="container">
-                <div class="row">
-                  <div class="col l6 s12">
-                    <h5 class="white-text">Footer Content</h5>
-                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-                  </div>
-                  <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Links</h5>
-                    <ul>
-                      <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                      <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                      <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                      <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+    <div ui-view></div>
+
+    <!-- FOOTER -->
+     <footer class="page-footer blue-grey darken-4">
+        <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">JAM!NOW</h5>
+                <p class="grey-text text-lighten-4">Pour quelquonque questions n'hésitez pas à nous contacter.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Liens utiles</h5>
+                <div class="footer-liste-alignement">
+                <ul class="footer-liste">
+                  <li><a class="grey-text text-lighten-3" href="#">Contact</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#">Mentions légales</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#">Confidentialité</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#">Inscription</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#">Connexion</a></li>
                     </ul>
                   </div>
                 </div>
-              </div>
-              <div class="footer-copyright">
-                <div class="container">
-                © 2014 Copyright Text
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-                </div>
-              </div>
-            </footer>
-    <div ui-view></div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="home.html">Acceuille</a>
+            </div>
+          </div>
+        </footer>
+    
 </body>
 </html>
