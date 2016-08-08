@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>JamNow</title>
-    <!-- MATERIALISE LIBRAIRIE  -->
+    <!-- MATERIALIZE LIBRAIRIE  -->
     <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-          
+
     <!-- IMPORTED CSS -->
     <!-- OUR CSS -->
     <link rel="stylesheet" type="text/css" href="../assets/css/global.css">
@@ -20,6 +21,7 @@
     <script type="text/javascript" src="../app/app.config.min.js"></script>
     <!-- CONTROLLERS -->
     <script type="text/javascript" src="../app/controllers/MainController.min.js"></script>
+		<script type="text/javascript" src="../app/controllers/ContactController.min.js"></script>
     <!-- DIRECTIVES -->
     <!-- SERVICES -->
 </head>
@@ -50,18 +52,18 @@
     <!-- FOOTER -->
      <footer class="page-footer blue-grey darken-4">
         <div class="container">
-            <div class="footer-row">
+            <div class="row">
               <div class="col l6 s12">
-                <h5 class="footer-title1 white-text">JAM!NOW</h5>
+                <h5 class="white-text">JAM!NOW</h5>
                 <p class="grey-text text-lighten-4">Pour quelquonque questions n'hésitez pas à nous contacter.</p>
               </div>
               <div class="col l4 offset-l2 s12">
-                <h5 class="footer-title2 white-text">Liens utiles</h5>
+                <h5 class="white-text">Liens utiles</h5>
                 <div class="footer-liste-alignement">
                 <ul class="footer-liste">
-                  <li><a class="grey-text text-lighten-3" href="contact.html">Contact</a></li>
-                  <li><a class="grey-text text-lighten-3" href="legal.html">Mentions légales</a></li>
-                  <li><a class="grey-text text-lighten-3" href="confidentialite.html">Confidentialité</a></li>
+                  <li><a class="grey-text text-lighten-3" ui-sref="contact">Contact</a></li>
+                  <li><a class="grey-text text-lighten-3" ui-sref="legal">Mentions légales</a></li>
+                  <li><a class="grey-text text-lighten-3" ui-sref="confidentialite">Confidentialité</a></li>
                   <li><a class="grey-text text-lighten-3" href="inscription.html">Inscription</a></li>
                   <li><a class="grey-text text-lighten-3" href="connexion1.html">Connexion</a></li>
                     </ul>
@@ -72,10 +74,9 @@
           <div class="footer-copyright">
             <div class="container">
             © 2014 Copyright Text
-            <a class="footer-acceuil-link grey-text text-lighten-4 right" href="home.html">Acceuil</a>
+            <a class="footer-acceuil-link grey-text text-lighten-4 right" href="home.html">Accueil</a>
             </div>
           </div>
         </footer>
-    
 </body>
 </html>
