@@ -1,0 +1,21 @@
+.auth{
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items: center;
+	.home-btn-inscription {
+	width: 700px;
+	height: 130px;
+	background-color: transparent;
+	border-color:white;
+	font-size: 60px;
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+	vertical-align: center;
+	text-transform: none;
+	border-radius: 60px;
+	font-weight: 400;
+	color:black;
+	}
+}
