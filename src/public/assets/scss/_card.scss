@@ -1,0 +1,36 @@
+.card {
+	display: flex;
+	justify-content:center;
+	background-color: #C3C6CE;
+	width: 800px;
+	border-radius: 10px;
+	margin-top: 30px;
+
+	.card-left-part {
+		display: flex;
+		justify-content:center;
+		width: 80%;
+		border-right-style: dotted;
+		 border-width: 6px;
+		.icon-fleche {
+			font-size: 102px;
+			margin-top: 3px;
+			margin-right: 100px;
+		}	 
+	}
+	.card-right-part {
+		display: flex;
+		justify-content:center;
+		flex-direction:column;
+		width: 20%;
+		font-size: 32px;
+		.date {
+			display: flex;
+			justify-content:center;
+		}
+		.month{
+			display: flex;
+			justify-content:center;
+		}
+	}
+}
