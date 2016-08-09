@@ -84,7 +84,7 @@ gulp.task('nodemon', function(cb) {
 **/
 gulp.task('browser-sync', ['nodemon'], function() {
   browserSync.init(null, {
-    proxy: "http://localhost:8080",
+    proxy: "http://localhost:7070",
     files: ["dist/public/**/*.*"]
   });
 });
