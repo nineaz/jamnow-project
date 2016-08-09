@@ -1,33 +1,81 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<meta charset="UTF-8">
-	<title>JamNow</title>
-	
-	<!-- IMPORTED CSS -->
+    <meta charset="UTF-8">
+    <title>JamNow</title>
+    <!-- MATERIALISE LIBRAIRIE  -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 
-	<!-- OUR CSS -->
-	<link rel="stylesheet" type="text/css" href="../assets/css/global.css">
-	<!-- LIBRAIRIES JS -->
-	<script type="text/javascript" src="../lib/js/angular.min.js"></script>
-	<script type="text/javascript" src="../lib/js/angular-ui-router.min.js"></script>
-
-	<!-- OUR APP & CONFIG -->
-	<script type="text/javascript" src="../app/app.min.js"></script>
-	<script type="text/javascript" src="../app/app.config.min.js"></script>
-	<!-- CONTROLLERS -->
-	<script type="text/javascript" src="../app/controllers/MainController.min.js"></script>
-	<!-- DIRECTIVES -->
-
-	<!-- SERVICES -->
+    <!-- IMPORTED CSS -->
+    <!-- OUR CSS -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/global.css">
+    <!-- LIBRAIRIES JS -->
+    <script type="text/javascript" src="../lib/js/angular.min.js"></script>
+    <script type="text/javascript" src="../lib/js/angular-ui-router.min.js"></script>
+    <!-- OUR APP & CONFIG -->
+    <script type="text/javascript" src="../app/app.min.js"></script>
+    <script type="text/javascript" src="../app/app.config.min.js"></script>
+    <!-- CONTROLLERS -->
+    <script type="text/javascript" src="../app/controllers/MainController.min.js"></script>
+    <!-- DIRECTIVES -->
+    <!-- SERVICES -->
 </head>
 <body ng-app="jamnow">
-	<div ng-controller="MainController as main">
-		<h1> {{main.coucou}} , {{hello}} </h1>	
-	</div>
-	
-	<!-- Renders the view indicated by our config file -->
+    <div class="background-image">
+      <nav class="nav">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">JAM!NOW</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Javascript</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Javascript</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- Renders the view indicated by our config file -->
+    <div ui-view></div>
 
-	<div ui-view></div>
+    <!-- FOOTER -->
+     <footer class="page-footer blue-grey darken-4">
+        <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">JAM!NOW</h5>
+                <p class="grey-text text-lighten-4">Pour quelquonque questions n'hésitez pas à nous contacter.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Liens utiles</h5>
+                <div class="footer-liste-alignement">
+                <ul class="footer-liste">
+                  <li><a class="grey-text text-lighten-3" href="contact.html">Contact</a></li>
+                  <li><a class="grey-text text-lighten-3" href="mentions.html">Mentions légales</a></li>
+                  <li><a class="grey-text text-lighten-3" href="confidentialite.html">Confidentialité</a></li>
+                  <li><a class="grey-text text-lighten-3" ui-sref="inscription">Inscription</a></li>
+                  <li><a class="grey-text text-lighten-3" href="connexion1.html">Connexion</a></li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="footer-acceuil-link grey-text text-lighten-4 right" href="home.html">Acceuil</a>
+            </div>
+          </div>
+        </footer>
 </body>
 </html>
