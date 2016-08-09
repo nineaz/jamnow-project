@@ -10,7 +10,6 @@ jamApp.config(['$stateProvider', '$urlRouterProvider',function($stateProvider, $
 		url: "/",
 		templateUrl: "../views/pages/home.html"
 	})
-<<<<<<< HEAD
 	.state('legal',  {
 		url: "/legal",
 		templateUrl: "../views/pages/legal.html"
@@ -26,19 +25,18 @@ jamApp.config(['$stateProvider', '$urlRouterProvider',function($stateProvider, $
 	.state('contact',  {
 		url: "/contact",
 		templateUrl: "../views/pages/contact.html"
-=======
+	})
 	.state('inscription',  {
-		url: "/",
+		url: "/inscription",
 		templateUrl: "../views/pages/inscription.html"
 	})
-	.state('inscription2',  {
-		url: "/",
+	.state('inscription-form',  {
+		url: "/inscription-form",
 		templateUrl: "../views/pages/inscription2_form.html"
 	})
-	.state('inscription3',  {
-		url: "/",
+	.state('inscription-confirmation',  {
+		url: "/inscription-confirmation",
 		templateUrl: "../views/pages/inscription3_confirmation.html"
->>>>>>> origin/inscription-inte-mobile
 	});
 
 }]);
