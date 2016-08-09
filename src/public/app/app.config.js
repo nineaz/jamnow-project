@@ -30,11 +30,11 @@ jamApp.config(['$stateProvider', '$urlRouterProvider',function($stateProvider, $
 		url: "/inscription",
 		templateUrl: "../views/pages/inscription.html"
 	})
-	.state('inscription-form',  {
+	.state('inscription2',  {
 		url: "/inscription-form",
 		templateUrl: "../views/pages/inscription2_form.html"
 	})
-	.state('inscription-confirmation',  {
+	.state('inscription3',  {
 		url: "/inscription-confirmation",
 		templateUrl: "../views/pages/inscription3_confirmation.html"
 	});
