@@ -36,7 +36,8 @@ La section **Modèle** présente à quoi ressemblent les objets stockés en BDD,
 	firstname: String,
 	lastname: String,
 	email: String,
-	location: String
+	location: String,
+	jams: Array of ids
 }
 ```
 
@@ -68,7 +69,7 @@ Détruit l'utilisateur portant l'id spécifié
 	id_admin: (string),   // id de l'admin de la jam
 	email: String,
 	location: String,
-	users: Array
+	users: Array of ids
 }
 ```
 

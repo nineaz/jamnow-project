@@ -8,7 +8,7 @@ var mongoose = restful.mongoose;
 var jamSchema = new mongoose.Schema({
 	name: String,
 	description: String,
-	date: String,
+	date: Date,
 	id_admin: {type: mongoose.Schema.Types.ObjectId, ref: 'User'},
 	email: String,
 	location: String

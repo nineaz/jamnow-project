@@ -11,7 +11,8 @@ var userSchema = new mongoose.Schema({
 	firstname: String,
 	lastname: String,
 	email: String,
-	location: String
+	location: String,
+	jams: [{type: Schema.Types.ObjectId, ref: 'Jam'}]
 });
 
 // Return model
