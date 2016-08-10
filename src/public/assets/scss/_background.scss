@@ -1,15 +1,42 @@
+// MOBIL VERSION
+@media(max-width: 732px){
+	.home-background{
+		background-image:url('../images/bg8.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		position: fixed;
+		top: 0;
+		right: 0;
+		height: 100%;
+		width: 100%;
+		z-index: -1;
+	}
+}
+// DESKTOP VERSION
 .home-background{
-	background-image:url('../images/bg8.jpg');
+		background-image:url('../images/bg1.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		position: fixed;
+		top: 0;
+		right: 0;
+		height: 100%;
+		width: 100%;
+		z-index: -1;
+	}
+.background-image-pourquoi-home {
+	background-image: url("../images/bg8.jpg");
+	height: 200px;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	position: fixed;
-	top: 0;
-	right: 0;
-	height: 100%;
-	width: 100%;
-	z-index: -1;
 }
+.card-home-background {
+	background-color: white;
+}
+
 .bg-img-inscription1 {
   background-image: url('../images/bg5.jpg');
   height: 600px;
@@ -71,3 +98,5 @@
 	width: 100%;
 	z-index: -1;
 }
+
+

@@ -2,10 +2,27 @@
 // HOME POURQUOI JAMNOW CONTENT
 .pourquoi-jamnow-home {
 	background-color: white;
-	padding-top: 80px;
+	padding-top:80px;
 	padding-bottom: 80px;
-	.pourquoi-jamnow-home-texte {
+	
+	.pourquoi-jamnow-home-texte1,.pourquoi-jamnow-home-texte2, {
 	font-size: 18px;
 	line-height: 30px;
+	}
+	.pourquoi-jamnow-home-texte1 {
+		margin-top: 3%;
+	}
+}
+.comment-jamnow-home {
+	color:white;
+	font-size: 18px;
+	line-height: 26px;
+	.comment-jamnow-home-title{
+		margin-top: 8%;
+	}
+	.comment-jamnow-home-text{
+		text-align: center;
+		font-size: 20px;
+		margin-bottom: 100px;
 	}
 }
