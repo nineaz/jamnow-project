@@ -1,4 +1,10 @@
 .avatar-profil {
-  max-width: 40%;
+  max-width: 20%;
   border-radius: 50%;
+}
+
+@media all and (max-device-width: 480px){
+  .avatar-profil {
+    max-width: 40%;
+  }
 }
