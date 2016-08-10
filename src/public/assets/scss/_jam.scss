@@ -1,0 +1,25 @@
+.card-jam {
+    background-color: white;
+    color: black;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+
+.card-jam2 {
+    background-color: white;
+    color: black;
+    border-radius: 2px;
+    padding:15px;
+    margin-bottom: 10px;
+}
+
+.fiche-participant {
+
+}
+
+@media all and (max-device-width: 480px){
+  .card-jam {
+    background-color: transparent;
+    color: white;
+  }
+}
