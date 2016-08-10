@@ -15,7 +15,7 @@ User.register(router, '/users');
 Jam.methods(['get', 'put', 'post', 'delete']);
 Jam.register(router, '/jams');
 
-Contact.methods(['get', 'put', 'post', 'delete']);
+Contact.methods(['get', 'post']);
 Contact.register(router, '/contacts');
 
 
