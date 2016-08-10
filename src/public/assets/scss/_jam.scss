@@ -3,6 +3,7 @@
     color: black;
     border-radius: 2px;
     margin-bottom: 20px;
+    margin-top: 0;
 }
 
 .card-jam2 {
@@ -12,9 +13,11 @@
     padding:15px;
     margin-bottom: 10px;
 }
-
-.fiche-participant {
-
+.btn-jam-position {
+  left: 850px;
+  top: 450px;
+  position:absolute;
+  z-index: 2;
 }
 
 @media all and (max-device-width: 480px){
@@ -22,4 +25,11 @@
     background-color: transparent;
     color: white;
   }
+  .btn-jam-position {
+    left: 250px;
+    top: 100px;
+    position:absolute;
+    z-index: 2;
+  }
+
 }
