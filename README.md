@@ -73,6 +73,4 @@ Dans les deux cas, n'oubliez pas de linker vos JS dans la partie réservée à c
 
 ## Et elle est où la base de données ?
 
-Pas là. Elle pas là, mais elle est où ?  Pas là...
-
-**COMING SOON**
+[Elle est là](./API.md)
