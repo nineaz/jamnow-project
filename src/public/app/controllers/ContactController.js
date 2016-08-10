@@ -4,6 +4,8 @@
  	this.email = '';
  	this.message = '';
 
+ 	this.response = '';
+
  	this.sendContactForm = function() {
  		
  		var contactForm = {
@@ -13,7 +15,16 @@
  			message: this.message
  		};
 
- 		$http.post('http://localhost:3000/api/contacts');
+ 		// contactForm = JSON.stringify(contactForm);
+
+ 		$http.post('http://localhost:3000/api/contacts', contactForm)
+ 		.then(function(response){
+ 			this.response = 'omg you did it !';
+ 			console.log(this.response);
+ 		}, function(err) {
+ 			this.response = 'ONOES';
+ 			console.log(this.response);
+ 		});
  	};
 
 
