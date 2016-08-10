@@ -37,6 +37,10 @@ jamApp.config(['$stateProvider', '$urlRouterProvider',function($stateProvider, $
 	.state('inscription-confirmation',  {
 		url: "/inscription-confirmation",
 		templateUrl: "../views/pages/inscription3_confirmation.html"
+	})
+	.state('jam',  {
+		url: "/jam",
+		templateUrl: "../views/pages/jam.html"
 	});
 
 }]);

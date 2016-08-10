@@ -26,9 +26,22 @@
 }
 
 .bg-img-inscription3 {
-	background-image:url(../images/bg8.jpg);
+	background-image:url('../images/bg8.jpg');
 	background-repeat: no-repeat;
-	background-position: -1119px;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+.bg-img-jam {
+	background-image:url('../images/bg7.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
 	background-size: cover;
 	position: absolute;
 	top: 0;
