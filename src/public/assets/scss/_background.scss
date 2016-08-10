@@ -1,6 +1,7 @@
 .home-background{
 	background-image:url('../images/bg8.jpg');
 	background-repeat: no-repeat;
+	background-position: center;
 	background-size: cover;
 	position: fixed;
 	top: 0;
@@ -50,9 +51,12 @@
 	width: 100%;
 	z-index: -1;
 
-.page-connexion-background{
+.page-connexion-background {
 	background-image: url('../images/bg5.jpg');
-
+	}
+}
+.comment-jamnow-home {
+	background-image: url('../images/bg7.jpg');
 }
 
 .bg-img-profil {
