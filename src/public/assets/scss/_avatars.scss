@@ -3,6 +3,9 @@
   border-radius: 50%;
 }
 
+.avatar-profil-small {
+  max-width: 50px;
+}
 @media all and (max-device-width: 480px){
   .avatar-profil {
     max-width: 40%;
