@@ -1,3 +1,43 @@
+
+	// VERSION DESKTOP 
+	.home-btn-inscription {
+		width: 300px;
+		height: 40px;
+		background-color: transparent;
+		border-color:white;
+		font-size: 30px;
+		text-transform: none;
+		border-radius: 60px;
+		border:1px solid white;
+		font-weight: 400;
+		color:white;
+		letter-spacing: 2px;
+		box-shadow: none;
+		margin-top: 50px;
+	}
+	.home-btn-connexion {
+		margin-top: 40px;
+		margin-bottom: 80px;
+		font-size: 20px;
+		text-transform: none;
+		background-color: transparent;
+		color: white; // a changer
+		box-shadow: none;
+		border:none;
+	}
+	.page-connexion-btn {
+		padding-top: 10px;
+		padding-bottom: 50px;
+		width: 300px;
+		font-size: 27px;
+		}
+	.comment-jamnow-home-button1{
+		background-color: blue;
+	}
+	// VERSION MOBILE
+
+	@media(max-width: 732px){
+
 	.home-btn-inscription {
 	width: 700px;
 	height: 130px;
@@ -16,7 +56,7 @@
 	letter-spacing: 2px;
 	margin-top: 100px;
 	box-shadow: none;
-	}
+	}	
 	.home-btn-connexion {
 		margin-top: 80px;
 		margin-bottom: 80px;
@@ -25,5 +65,15 @@
 		background-color: transparent;
 		color: white; // a changer
 		box-shadow: none;
+		border:none;
 	}
+	.page-connexion-btn {
+		padding-top: 10px;
+		padding-bottom: 50px;
+		width: 300px;
+		font-size: 27px;
+		}
+
+	}
+
 

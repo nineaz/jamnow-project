@@ -26,6 +26,10 @@ jamApp.config(['$stateProvider', '$urlRouterProvider',function($stateProvider, $
 		url: "/contact",
 		templateUrl: "../views/pages/contact.html"
 	})
+	.state('connexion', {
+		url: "/connexion",
+		templateUrl: "../views/pages/connexion.html"
+	})
 	.state('inscription',  {
 		url: "/inscription",
 		templateUrl: "../views/pages/inscription.html"
