@@ -1,9 +1,12 @@
-
+body {
+	font-family: 'Open Sans', sans-serif;
+}
 // DESKTOP
 .pourquoi-jamnow-home {
 	background-color: white;
 	padding-top:80px;
 	padding-bottom: 80px;
+	height:400px;
 	
 	.pourquoi-jamnow-home-texte1,.pourquoi-jamnow-home-texte2, {
 	font-size: 18px;
@@ -18,6 +21,7 @@
 	color:white;
 	font-size: 18px;
 	line-height: 26px;
+	height: 500px;
 	
 	.comment-jamnow-home-title{
 		margin-top: 8%;
@@ -28,7 +32,6 @@
 		margin-bottom: 100px;
 	}
 }
-
 
 // VERSION MOBILE
 @media(max-width: 732px){
