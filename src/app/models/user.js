@@ -12,7 +12,7 @@ var userSchema = new mongoose.Schema({
 	lastname: String,
 	email: String,
 	location: String,
-	jams: [{type: Schema.Types.ObjectId, ref: 'Jam'}]
+	jams: [{type: mongoose.Schema.Types.ObjectId, ref: 'Jam'}]
 });
 
 // Return model
