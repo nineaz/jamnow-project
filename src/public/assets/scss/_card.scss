@@ -1,17 +1,19 @@
 .card {
 	display: flex;
-	justify-content:center;
-	background-color: #C3C6CE;
+	justify-content: center;
+	background-color: rgb(45,57,81);
 	width: 800px;
 	border-radius: 10px;
 	margin-top: 30px;
-
+	color: white;
+	
 	.card-left-part {
 		display: flex;
 		justify-content:center;
 		width: 80%;
 		border-right-style: dotted;
 		 border-width: 6px;
+		
 		.icon-fleche {
 			font-size: 102px;
 			margin-top: 3px;
@@ -20,17 +22,18 @@
 	}
 	.card-right-part {
 		display: flex;
-		justify-content:center;
+		justify-content: center;
 		flex-direction:column;
 		width: 20%;
 		font-size: 32px;
+		
 		.date {
 			display: flex;
-			justify-content:center;
+			justify-content: center;
 		}
 		.month{
 			display: flex;
-			justify-content:center;
+			justify-content: center;
 		}
 	}
 }

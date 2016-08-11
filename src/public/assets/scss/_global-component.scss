@@ -1,5 +1,5 @@
 
-// HOME POURQUOI JAMNOW CONTENT
+// DESKTOP
 .pourquoi-jamnow-home {
 	background-color: white;
 	padding-top:80px;
@@ -26,3 +26,11 @@
 		margin-bottom: 100px;
 	}
 }
+
+// VERSION MOBILE
+@media(max-width: 732px){
+.pourquoi-jamnow-home, .comment-jamnow-home, .card-dektop-header {
+		display: none;
+	}	
+}
+
