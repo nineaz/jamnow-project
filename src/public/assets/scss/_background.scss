@@ -34,10 +34,11 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	margin-left: 4%;
 }
 .card-home-background {
 	background-color: white;
-	margin-bottom: 60px;
+	height: 600px;
 }
 
 .bg-img-inscription1 {
@@ -80,6 +81,7 @@
 	width: 100%;
 	z-index: -1;
 }
+<<<<<<< 4e4b1a59e2e22536e90d14129d71a8394e4a6cbc
 
 .bg-img-newjam {
 	background-image:url('../images/bg3.jpg');
@@ -98,6 +100,12 @@
 .page-connexion-background {
 	background-image: url('../images/bg5.jpg');
 }
+=======
+.page-connexion-background {
+	background-image: url('../images/bg5.jpg');
+	}
+
+>>>>>>> mise a jour connexion
 .comment-jamnow-home {
 	background-image: url('../images/bg7.jpg');
 }
