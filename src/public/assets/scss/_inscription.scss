@@ -1,13 +1,39 @@
+//INSCRIPTION PAGE 2
+
 .round-bg-light {
   background-color: rgba(189, 189, 189, 0.5);
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+
+  .icon-imgfile-align {
+    margin: 0 auto;
+  }
 }
+
+
+
+//INSCRIPTION PAGE 3
 
 .round-bg-dark {
   background-color: rgba(66, 66, 66, 0.5);
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+
+  .icon-done-align {
+    margin: 0 auto;
+  }
+}
+
+.container-btn-retour-accueil-inscription3 {
+  margin: 0 auto;
+
+  .btn-retour-inscription3 {
+    margin: 0 auto;
+    display: block;
+    width: 20%;
+  }
 }
