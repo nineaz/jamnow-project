@@ -7,7 +7,7 @@
 		border-color:white;
 		font-size: 30px;
 		text-transform: none;
-		border-radius: 60px;
+		border-radius: 18px;
 		border:1px solid white;
 		font-weight: 400;
 		color:white;
@@ -17,7 +17,7 @@
 	}
 	.home-btn-connexion {
 		margin-top: 40px;
-		margin-bottom: 80px;
+		margin-bottom: 40px;
 		font-size: 20px;
 		text-transform: none;
 		background-color: transparent;
@@ -26,22 +26,19 @@
 		border:none;
 	}
 	.page-connexion-btn {
-		padding-top: 10px;
-		padding-bottom: 50px;
-		width: 300px;
-		font-size: 27px;
+		padding-top: 5px;
+		padding-bottom: 40px;
+		width: 200px;
+		font-size: 18px;
+		margin-bottom: 100px;
 		}
+
 	.comment-jamnow-home-button1{
 		background-color: blue;
 	}
 	// VERSION MOBILE
-// TESSSSST
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
 
-
+	@media(max-width: 732px){
 
 	.home-btn-inscription {
 	width: 700px;
@@ -81,4 +78,4 @@
 
 	}
 
-}
+
