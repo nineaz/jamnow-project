@@ -6,11 +6,11 @@ var mongoose = restful.mongoose;
 // Schema
 
 var userSchema = new mongoose.Schema({
-	username: String,
-	password: String,
+	username: {type: String, required: true},
+	password: {type: String, required: true},
 	firstname: String,
 	lastname: String,
-	email: String,
+	email: {type: String, required: true},
 	location: String,
 	jams: [{type: mongoose.Schema.Types.ObjectId, ref: 'Jam'}]
 });
