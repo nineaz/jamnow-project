@@ -14,6 +14,10 @@ jamApp.config(['$stateProvider', '$urlRouterProvider',function($stateProvider, $
 		url: "/jam",
 		templateUrl: "../views/pages/jam.html"
 	})
+	.state('newjam',  {
+		url: "/newjam",
+		templateUrl: "../views/pages/newjam.html"
+	})
 	.state('legal',  {
 		url: "/legal",
 		templateUrl: "../views/pages/legal.html"
