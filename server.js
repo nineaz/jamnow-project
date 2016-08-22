@@ -7,6 +7,7 @@ var mongoose = require('mongoose');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var passport = require('passport');
+var localStrategy = require('passport-local')
 
 // MongoDB
 mongoose.connect('mongodb://localhost/db_jamnow');
