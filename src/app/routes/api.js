@@ -42,7 +42,6 @@ function hash_password(req, res, next) {
 }
 
 
-
 // comparing passwords
 
 // function compare_passwords() {
