@@ -33,19 +33,21 @@
 		.footer-title1, .footer-title2{
 			font-size: 30px;
 		}
+
 		.footer-copyright{
 			font-size: 12px;
 			letter-spacing: 1px;
-			
-			.container {
-				
+		
 				.footer-acceuil-link {
 					font-weight: 500;
-					letter-spacing: 3px;
+					letter-spacing: 1px;
 					font-size: 16px;
 					border-bottom: 4px solid white;
 					margin-right: 22%;
 				}
 			}
+			.footer-right-part {
+				line-height: 20px;
+			}
 		}
-	}
+	
