@@ -95,6 +95,19 @@
 	z-index: -1;
 }
 
+.bg-img-joinjam {
+	background-image:url('../images/bg2.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
 
 .page-connexion-background {
 	background-image: url('../images/bg5.jpg');

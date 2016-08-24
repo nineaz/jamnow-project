@@ -18,6 +18,12 @@ jamApp.config(['$stateProvider', '$urlRouterProvider',function($stateProvider, $
 		url: "/newjam",
 		templateUrl: "../views/pages/newjam.html"
 	})
+
+	.state('joinjam',  {
+		url: "/joinjam",
+		templateUrl: "../views/pages/joinjam.html"
+	})
+
 	.state('legal',  {
 		url: "/legal",
 		templateUrl: "../views/pages/legal.html"
