@@ -20,9 +20,11 @@
     <script type="text/javascript" src="../app/app.config.min.js"></script>
     <!-- CONTROLLERS -->
     <script type="text/javascript" src="../app/controllers/MainController.min.js"></script>
-	<script type="text/javascript" src="../app/controllers/ContactController.min.js"></script>
+  	<script type="text/javascript" src="../app/controllers/ContactController.min.js"></script>
+    <script type="text/javascript" src="../app/controllers/JamController.min.js"></script>
     <!-- DIRECTIVES -->
     <!-- SERVICES -->
+    <script type="text/javascript" src="../app/services/ApiFactory.min.js"></script>
 </head>
 <body ng-app="jamnow">
   <nav class="nav">
@@ -32,7 +34,7 @@
       <ul class="nav-liste right hide-on-med-and-down">
         <li><a  ui-sref="connexion">Connexion</a></li>
         <li><a  ui-sref="inscription">Inscription</a></li>
-        <li><a  ui-sref="jam">Créer une jam</a></li>
+        <li><a  ui-sref="newjam">Créer une jam</a></li>
         <li><a  ui-sref="jam">Rejoindre une jam</a></li>
         <li><a  ui-sref="contact">Contact</a></li>
       </ul>

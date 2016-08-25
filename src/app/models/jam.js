@@ -11,7 +11,8 @@ var jamSchema = new mongoose.Schema({
 	date: Date,
 	id_admin: {type: mongoose.Schema.Types.ObjectId, ref: 'User'},
 	email: String,
-	location: String
+	location: String,
+	limit: Number
 });
 
 // Return model
