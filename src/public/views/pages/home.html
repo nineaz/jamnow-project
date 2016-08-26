@@ -1,19 +1,19 @@
 <!-- CONNEXIONS -->
 <div class="row">
-  <div class="col s12">
+  <div class="col offset-s2 s8">
       <div class="center">
           <div class="home-pitch">
             <h1 class="home-pitch-texte center-align">Vivez la musique.</h1>
-            <h1 class="home-pitch-texte center-align">Maintenant.</h1>
+            <h1 class="home-pitch-texte center-align">Maintenant</h1>
           </div>
         <div class="auth">
         <div class="row">
-            <div class="col s6 m12 l12">
-              <a class="home-btn-inscription waves-effect waves-light btn">S'inscrire</a>
+            <div class="col s12">
+              <a class="home-btn-inscription waves-effect waves-light btn" ui-sref="inscription.idform">S'inscrire</a>
             </div>
         </div>
         <div class="row">
-            <div class="col s6 m12 l12">
+            <div class="col s12">
               <a class="home-btn-connexion waves-effect waves-light btn">Se Connecter</a>
             </div>
         </div>
@@ -24,7 +24,7 @@
 
   <!-- SEARCH BAR -->
       <div class="row">
-      <div class="col offset-s2 s8  offset-m2 m8 offset-l2 l8">
+      <div class="col offset-s2 s8 m8 offset-m2 l8 offset-l2">
         <form>
           <div class="input-field home-search-bar">
             <input id="home-search" type="search" class="home-search" required placeholder="Quel type de Jam voulez-vous rejoindre ?">
@@ -51,19 +51,29 @@
           <div class="all-cards">
             <div class="card">
               <div class="card-left-part">
+              <div class="row">
+                <div class="col offset-s2 s8">
                 <i class="material-icons icon-fleche">trending_flat</i>
                 <a class="card-left-part-title" href="http://www.lorenzoverzini.com/prrr/">SIMPLON JAM!</a>
               </div>
+                 </div>
+                  </div>
               <div class="card-middle-part"></div>
               <div class="card-right-part">
                 <div class="date">12</div>
                 <div class="month">Aout</div>
               </div>
             </div>
+        
+
             <div class="card">
-              <div class="card-left-part">
+             <div class="card-left-part">
+              <div class="row">
+                <div class="col offset-s2 s8">
                  <i class="material-icons icon-fleche">trending_flat</i>
                 <a class="card-left-part-title" href="http://www.lorenzoverzini.com/prrr/">FRED ET JAMMY JAM</a>
+              </div>
+              </div>
               </div>
               <div class="card-right-part">
                 <div class="date">12</div>
@@ -75,6 +85,8 @@
               <div class="card-left-part">
                 <i class="material-icons icon-fleche">trending_flat</i>
                <a class="card-left-part-title" href="http://www.lorenzoverzini.com/prrr/">TURN A RADIO ON</a>
+              </div>
+              </div>
               </div>
               <div class="card-right-part">
                 <div class="date">12</div>
@@ -104,33 +116,51 @@
 <!-- CONTENT HOW USE JAMNOW -->
 <div class="comment-jamnow-home"> 
   <div class="row"> 
-    <div class="col offset-s3 s9 offset-m3 m9  offset-l3 l9">
-      <div class="comment-jamnow-home-title">
+      <div class="col offset-s2 s8 offset-m2 m8  offset-l2 l8">
+        <div class="comment-jamnow-home-title">
         <h2>Comment ca marche ?</h2>
+        </div>
+      </div>
+      <div class="col offset-s2 s8 offset-m2 m8  offset-l2 l8">
+      <div class="row">
+        <div class="comment-jamnow-home-card">
+          <div class="col offset-s2 s8 offset-m2 m8 offset-l2 l1">
+          <a class=" comment-jamnow-home-button1 btn-floating btn-large waves-effect waves-light red">1</a>
+          <p>J'organise une Jam chez moi ou ailleurs</p>
+          </div>
+          
+          <div class="col offset-s2 s8 offset-m2 m8 offset-l2 l1">
+          <a class=" comment-jamnow-home-button2 btn-floating btn-large waves-effect waves-light red">2</a>
+          <p>Je recois des demandes de participations d'autres passionnés</p>
+          </div>
+          
+          <div class="col offset-s2 s8 offset-m2 m8 offset-l2 l1">
+          <a class=" comment-jamnow-home-button1 btn-floating btn-large waves-effect waves-light red">3</a>
+          <p>Je valide leurs demandes</p>
+          </div>
+          
+          <div class="col offset-s2 s8 offset-m2 m8 offset-l2 l1">
+          <a class=" comment-jamnow-home-button1 btn-floating btn-large waves-effect waves-light red">4</a>
+          <p>Jour :J Que la jam commence !</p>
+          
+          </div>
+        </div>
       </div>
     </div>
-    <div class="col offset-l1 col s2  m2  l2">
-      <a class=" comment-jamnow-home-button1 btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
-      <p>J'organise une Jam chez moi ou ailleurs</p>
-    </div>
-    <div class="col offset-l1 s2  m2  l2">
-    <a class=" comment-jamnow-home-button2 btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
-      <p>Je recois des demandes de participations d'autres passionnés</p>
-    </div>
-    <div class="col offset-l1 s2  m2  l2">
-    <a class=" comment-jamnow-home-button1 btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
-      <p>Je valide leurs demandes</p>
-    </div>
-    <div class="col offset-l1 s2  m2  l2">
-    <a class=" comment-jamnow-home-button1 btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
-        <p>Jour :J Que la jam commence !</p>
+  </div>
+        
+  <div class="row">
+     <div class="col offset-s2 s8 offset-m2 m8 offset-l2 l8">
+        <div class="comment-jamnow-home-text">
+        <p class="comment-jamnow-home-para"><a  ui-sref="jam">Ou je rejoins une Jam déja organisée !</a></p>
+       
+      </div>
     </div>
   </div>
-    <div class="comment-jamnow-home-text">
-      <p class="comment-jamnow-home-para">Ou je rejoins une Jam organisée !</p>
-    </div>
-</div>
 
+
+  
+  </div>
 <!-- BACKGROUND -->
 <div class="home-background">
 </div>
