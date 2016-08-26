@@ -1,5 +1,5 @@
- jamApp.controller('ContactController', ['$scope', '$http', function($scope, $http){
- 	this.name = 'plop';
+ jamApp.controller('ContactController', ['$scope', '$http', 'ApiFactory', function($scope, $http, ApiFactory){
+ 	this.name = '';
  	this.phoneNumber = '';
  	this.email = '';
  	this.message = '';
@@ -7,7 +7,7 @@
  	this.response = '';
 
  	this.sendContactForm = function() {
- 		
+
  		var contactForm = {
  			name: this.name,
  			phoneNumber: this.phoneNumber,
@@ -17,7 +17,7 @@
 
  		// contactForm = JSON.stringify(contactForm);
 
- 		$http.post('http://localhost:3000/api/contacts', contactForm)
+ 		$http.post(ApiFactory.api+'contacts', contactForm)
  		.then(function(response){
  			this.response = 'omg you did it !';
  			console.log(this.response);
