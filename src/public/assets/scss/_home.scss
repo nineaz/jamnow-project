@@ -1,9 +1,4 @@
-	
-
-
-
-
-	// VERSION DESKTOP
+// VERSION DESKTOP
 	.home-pitch {
 		color:white;
 	}
@@ -11,19 +6,19 @@
 
 	@media(max-width: 732px){
 	.home-pitch {
-		margin-top: 100px;
+		margin-top: 30px;
 		display: flex;
 		flex-direction:column;
 		justify-content:center;
 		align-items:center;
-		width: 600px;
 		color:white;
-	
+
 		.home-pitch-texte {
-		font-size: 34px;	
+		font-size: 34px;
+		line-height: 50px;
 		}
 	}
-	.center{
+	.center {
 		display: flex;
 		flex-direction:column;
 		justify-content:center;

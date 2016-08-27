@@ -36,10 +36,7 @@
 	background-size: cover;
 	margin-left: 4%;
 }
-.card-home-background {
-	background-color: white;
-	height: 600px;
-}
+
 
 .bg-img-inscription1 {
 	background-image:url('../images/bg5.jpg');
@@ -146,4 +143,8 @@
 	height: 100%;
 	width: 100%;
 	z-index: -1;
+}
+
+.white-background {
+	background-color: white;
 }
