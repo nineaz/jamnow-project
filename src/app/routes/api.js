@@ -3,15 +3,12 @@ var express = require('express');
 var router = express.Router();
 
 var bcrypt = require('bcryptjs');
-<<<<<<< HEAD
 
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var passport = require('passport');
 var localStrategy = require('passport-local').Strategy;
-=======
-// Models
->>>>>>> e07eb729478ed377fee6f015d19bf08c17422b69
+
 
 // Models
 var User = require('../models/user');
