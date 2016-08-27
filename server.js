@@ -7,7 +7,10 @@ var mongoose = require('mongoose');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var passport = require('passport');
-var localStrategy = require('passport-local')
+
+// Passport init
+app.use(passport.initialize());
+app.use(passport.session());
 
 // MongoDB
 mongoose.connect('mongodb://localhost/db_jamnow');
@@ -26,11 +29,6 @@ app.use(express.static(__dirname + "/dist/public"));
 app.get('*', function(req, res) {
     res.sendFile(path.join(__dirname + "/dist/public/views/index.html"));
 });
-
-// Passport
-
-app.use(passport.initialize());
-app.use(passport.session());
 
 
 // Start server
