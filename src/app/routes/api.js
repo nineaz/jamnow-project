@@ -3,11 +3,15 @@ var express = require('express');
 var router = express.Router();
 
 var bcrypt = require('bcryptjs');
+<<<<<<< HEAD
 
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var passport = require('passport');
 var localStrategy = require('passport-local').Strategy;
+=======
+// Models
+>>>>>>> e07eb729478ed377fee6f015d19bf08c17422b69
 
 // Models
 var User = require('../models/user');
@@ -55,6 +59,7 @@ passport.deserializeUser(function(id, cb) {
 // user routes
 User.methods(['get', 'put', 'post', 'delete']);
 
+
 User.before('post', hash_password);
 
 User.register(router, '/users');
@@ -75,11 +80,11 @@ router.post('/login',
 		console.log(req);
 		console.log(res);
 		console.log('you are logged in');
+
 });
 
 // hashing passwords
 function hash_password(req, res, next) {
-	console.log('hashing password...');
 	bcrypt.genSalt(10, function(err, salt) {
 	    bcrypt.hash(req.body.password, salt, function(err, hash) {
 	        req.body.password = hash;

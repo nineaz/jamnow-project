@@ -30,6 +30,5 @@ app.get('*', function(req, res) {
     res.sendFile(path.join(__dirname + "/dist/public/views/index.html"));
 });
 
-
 // Start server
 app.listen(7070);
