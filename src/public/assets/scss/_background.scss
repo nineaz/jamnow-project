@@ -42,8 +42,16 @@
 }
 
 .bg-img-inscription1 {
-  background-image: url('../images/bg5.jpg');
-  height: 600px;
+	background-image:url('../images/bg5.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
 }
 
 .bg-img-inscription2 {
