@@ -1,7 +1,10 @@
+<div class="contact-page">
 <div class="container">
+<div class="contact-page-form">
   <div class="row" ng-controller="ContactController as ctrl">
     <form class="col s12">
       <div class="row">
+      <h1 class="contact-page-title">CONTACT</h1>
         <div class="input-field col s12">
           <i class="material-icons prefix">account_circle</i>
           <input id="icon_prefix" type="text" class="validate" ng-model="ctrl.name">
@@ -25,16 +28,24 @@
             <label for="textarea1">Votre message</label>
           </div>
         </div>
-        <button class="btn waves-effect waves-light" type="submit" name="action" ng-click="ctrl.sendContactForm()">Envoyer
+        <button class="btn waves-effect waves-ligh contact-page-button-submit" type="submit" name="action" ng-click="ctrl.sendContactForm()">Envoyer
         <i class="material-icons right">send</i></button>
         <br>
       </form>
-      <div class="row">
-        <br>
-        <div class="col s12"><b>Vous pouvez également nous contacter via :</b></div>
-        <div class="col s6"><p><a href="mailto:contact@jamnow.com">contact@jamnow.com</a></p><p><i class="material-icons prefix">phone</i>06 666 666 666</p></div>
-        <div class="col s6"><p><i class="material-icons prefix">location_on</i>JAMNOW<br>12 rue de la Jam<br>78350<br>Jamcity France</p></div>
+      </div>
+      <div class="contact-jamnow-infos">
+        <div class="row">
+          <br>
+          <div class="col s12 contact-page-texte-para"><b>Vous pouvez également nous contacter via :</b></div>
+          <div class="col s6"><p><a href="mailto:contact@jamnow.com">contact@jamnow.com</a></p><p><i class="material-icons prefix">phone</i>  06 666 666 666</p></div>
+          <div class="col s6"><p><i class="material-icons prefix">location_on</i>  JAMNOW<br>12 rue de la Jam<br>78350<br>Jamcity France</p></div>
+        </div>
       </div>
   </div>
 </div>
 
+
+              <!-- BACKGROUND -->
+
+<div class="contact-background"></div>
+</div>
