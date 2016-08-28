@@ -1,4 +1,4 @@
-// VERSION DEKTOP
+				// VERSION DESKTOP
 .page-connexion {
 		.page-connexion-title {
 			font-size: 36px;
@@ -22,9 +22,9 @@
 	}
 
 
-// VERSION MOBIL
+					// VERSION MOBILE
+	
 	@media(max-width: 732px){
-		
 		.page-connexion {
 			text-align: center;
 			color:white;
@@ -36,20 +36,18 @@
 		}
 
 		.page-connexion-infos {
-			width: 500px;
 			margin-bottom: 100px;
 
 		}
 		.connexion-input {
 			font-size: 40px;
-			width: 100px;
 		}
 		
 		.page-connexion-texte {
 			font-size: 16px;
 			color: white;
 			text-decoration: underline;
-			margin-top: 20px;
+			text-align: center;
 		}
 	}
 
