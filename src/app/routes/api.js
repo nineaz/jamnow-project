@@ -22,7 +22,7 @@ passport.use(new localStrategy(
   	console.log('coucou');
     User.findOne({username: username}, function(err, user) {
       if (err) {
-      	return done(err); 
+      	return done(err);
       }
       if(!user) {
       	console.log('Check username');
