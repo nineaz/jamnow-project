@@ -1,5 +1,5 @@
 <!-- CONNEXION -->
-	<content class="page-connexion">
+	<content class="page-connexion" ng-controller="LoginController as loginCtrl">
 		<div class="row">
 			<div class="col offset-s2 s8 offset-m2 m8 offset-l2 l8 ">
 				<h2 class="page-connexion-title">CONNECTEZ VOUS</h2>
@@ -12,11 +12,11 @@
 							<div class="col offset-s1
 							 s10 offset-m2 m8 offset-l2 l8">
 								<div class="input-field ">
-								<input placeholder="Email" type="email" id="email_connexion" class="connexion-input">
+								<input placeholder="Email" type="text" id="email_connexion" class="connexion-input" ng-model="loginCtrl.pseudo">
 								</div>							
 														<!-- MOT DE PASSE -->
 						<div class="input-field">
-						<input placeholder="Mot de passe" type="password" id="mdp_connexion" class="connexion-input">
+						<input placeholder="Mot de passe" type="password" id="mdp_connexion" class="connexion-input" ng-model="loginCtrl.password">
 								</div>
 							</div>
 						</div>	
@@ -26,7 +26,7 @@
 
 				<div class="page-connexion-down-text">
 					<p class="page-connexion-button-connexion">
-						<a class="waves-effect red lighten-2 btn page-connexion-btn">Connexion</a>
+						<a class="waves-effect red lighten-2 btn page-connexion-btn" ng-click="loginCtrl.login()">Connexion</a>
 					</p>
 					<p class="page-connexion-text-para">
 						<a class="page-connexion-texte">Vous n'avez pas encore de compte? </a>

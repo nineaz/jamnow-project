@@ -19,13 +19,11 @@ var Contact = require('../models/contact');
 
 passport.use(new localStrategy(
   function(username, password, done){
-  	console.log('coucou');
     User.findOne({username: username}, function(err, user) {
       if (err) {
       	return done(err);
       }
       if(!user) {
-      	console.log('Check username');
       	return done(null, false, {message: "wrong user"});
       }
       if (user.compare_passwords(password)) {
@@ -74,10 +72,9 @@ Contact.register(router, '/contacts');
 router.post('/login',
 	passport.authenticate('local'),
 	function(req, res) {
-		console.log(req);
-		console.log(res);
-		console.log('you are logged in');
-
+		console.log('authed !');
+    res.send(req.user);
+    res.end();
 });
 
 // hashing passwords

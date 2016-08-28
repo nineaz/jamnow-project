@@ -21,7 +21,6 @@ var userSchema = new mongoose.Schema({
 userSchema.methods.compare_passwords = function(pass) {
 	var hash = this.password;
 	bcrypt.compare(pass, hash, function(err, res) {
-    	console.log(res);
     	return res;
 	});
 };
