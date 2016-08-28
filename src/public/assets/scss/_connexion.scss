@@ -1,28 +1,26 @@
 // VERSION DEKTOP
 .page-connexion {
-			text-align: center;
 		.page-connexion-title {
 			font-size: 36px;
-			margin-top: 50px;
+			margin-top: 100px;
 			margin-bottom: 100px;
-			color:white;
+			color: white;
+			text-align: center;
 		.page-connexion-infos {
 			margin-bottom: 100px;
-
 		}
 		.connexion-input {
 			font-size: 18px;
 		}
-		
 		.page-connexion-texte {
 			font-size: 20px;
 			color: white;
-			text-decoration:underline;
-			text-align: center;
-
+			text-decoration: underline;
+			margin-top:30px;
+			}
 		}
 	}
-}
+
 
 // VERSION MOBIL
 	@media(max-width: 732px){
@@ -30,9 +28,9 @@
 		.page-connexion {
 			text-align: center;
 			color:white;
-	
+	}
 		.page-connexion-title {
-			font-size: 47px;
+			font-size: 35px;
 			margin-top: 100px;
 			margin-bottom: 100px;
 		}
@@ -43,14 +41,16 @@
 
 		}
 		.connexion-input {
-			font-size: 32px;
+			font-size: 40px;
+			width: 100px;
 		}
 		
 		.page-connexion-texte {
-			font-size: 20px;
+			font-size: 16px;
 			color: white;
 			text-decoration: underline;
+			margin-top: 20px;
 		}
 	}
-}
+
 
