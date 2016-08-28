@@ -1,22 +1,5 @@
-// MOBIL VERSION
-@media(max-width: 732px){
-	.home-background{
-		background-image:url('../images/bg8.jpg');
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-		position: fixed;
-		top: 0;
-		right: 0;
-		height: 100%;
-		width: 100%;
-		z-index: -1;
-	}
-}
-
-
 // DESKTOP VERSION
-.home-background{
+.home-background {
 		background-image:url('../images/bg1.jpg');
 		background-repeat: no-repeat;
 		background-position: center;
@@ -27,15 +10,28 @@
 		height: 100%;
 		width: 100%;
 		z-index: -1;
-	}
-.background-image-pourquoi-home {
+}
+
+.bg-img-pourquoi-home {
+	display: inline-block;
 	background-image: url("../images/bg8.jpg");
-	height: 200px;
+	height: 400px;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	margin-left: 4%;
+	width: 60%;
+	vertical-align: top;
 }
+
+.round-bg-num-cmt-home {
+	background-color: #b71c1c;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	margin: 0 auto;
+}
+
+
 
 
 .bg-img-inscription1 {
@@ -101,6 +97,7 @@
 	width: 100%;
 	z-index: -1;
 }
+
 .bg-img-newjam {
 	background-image:url('../images/bg3.jpg');
 	background-repeat: no-repeat;
@@ -128,7 +125,7 @@
 }
 
 
-.comment-jamnow-home {
+.container-cmt-home {
 	background-image: url('../images/bg7.jpg');
 }
 
@@ -147,4 +144,30 @@
 
 .white-background {
 	background-color: white;
+}
+
+
+
+
+
+// MOBIL VERSION
+@media(max-width: 732px) {
+	// .home-background{
+	// 	background-image:url('../images/bg8.jpg');
+	// 	background-repeat: no-repeat;
+	// 	background-position: center;
+	// 	background-size: cover;
+	// 	position: fixed;
+	// 	top: 0;
+	// 	right: 0;
+	// 	height: 100%;
+	// 	width: 100%;
+	// 	z-index: -1;
+	// }
+
+	.bg-img-pourquoi-home {
+		display: block;
+		width: 100%;
+		height: 200px;
+	}
 }
