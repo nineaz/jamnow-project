@@ -145,7 +145,18 @@
 .white-background {
 	background-color: white;
 }
-
+.contact-background {
+	background-image:url('../images/bg5.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
 
 
 
