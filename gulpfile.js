@@ -8,6 +8,7 @@
 * Not using gulp-load-plugins as it is nice to see whats here.
 *
 **/
+
 var gulp         = require('gulp');
 var sass         = require('gulp-sass');
 var browserSync  = require('browser-sync');
@@ -21,6 +22,8 @@ var imagemin     = require("gulp-imagemin");
 var pngquant     = require('imagemin-pngquant');
 var gulpCopy     = require('gulp-copy');
 var inject       = require('gulp-inject');
+var nodemon      = require('gulp-nodemon');
+
 
 /**
 *
@@ -33,11 +36,10 @@ var inject       = require('gulp-inject');
 *
 **/
 
-
-
 gulp.task('sass', function() {
-  gulp.src('src/assets/css/styles.scss')
-  .pipe(inject(gulp.src(['**/*.scss'], {read: false, cwd: 'src/assets/css'}), {
+  console.log('SASS processing');
+  gulp.src('src/public/assets/scss/global.scss')
+  .pipe(inject(gulp.src(['**/*.scss'], {read: false, cwd: 'src/public/assets/scss'}), {
     starttag: '/* IMPORTS */',
     endtag: '/* Fin des IMPORTS */',
     transform: function (filepath) {
@@ -49,7 +51,28 @@ gulp.task('sass', function() {
   .pipe(sass({outputStyle: 'compressed'}))
   .pipe(prefix('last 2 versions', '> 1%', 'ie 8', 'Android 2', 'Firefox ESR', 'ie 11'))
   .pipe(plumber())
-  .pipe(gulp.dest('dist/assets/css'));
+  .pipe(gulp.dest('dist/public/assets/css'));
+  // MATERIALIZE
+});
+
+/**
+*
+* Nodemon
+*
+* The ultimate answer to our server not starting
+**/
+
+gulp.task('nodemon', function(cb) {
+  var started = false;
+
+  return nodemon({
+    script: 'server.js'
+  }).on('start', function() {
+    if(!started){
+      cb();
+      started=true;
+    }
+  })
 });
 
 /**
@@ -59,11 +82,10 @@ gulp.task('sass', function() {
 * - View project at: localhost:3000
 *
 **/
-gulp.task('browser-sync', function() {
-  browserSync.init(['dist/**/css/*.css', 'dist/**/*.js', 'src/**/*.html'], {
-    server: {
-      baseDir: './dist'
-    }
+gulp.task('browser-sync', ['nodemon'], function() {
+  browserSync.init(null, {
+    proxy: "http://localhost:7070",
+    files: ["dist/public/**/*.*"]
   });
 });
 
@@ -78,23 +100,16 @@ gulp.task('browser-sync', function() {
 gulp.task('scripts', function() {
   
   //source
-  gulp.src('src/**/*.js')
-
+  gulp.src(['src/**/*.js', '!src/public/lib/js/*'])
   //lint
   .pipe(jshint())
   .pipe(jshint.reporter(stylish))
-
   //uglify
   .pipe(uglify())
-
   //rename
-  .pipe(rename({
-    suffix: ".min"
-  }))
-
-  .pipe(gulp.dest('dist/'))
+  .pipe(rename({suffix: ".min"}))
+  .pipe(gulp.dest('dist'))
 });
-
 
 
 /**
@@ -121,10 +136,10 @@ gulp.task('images', function () {
 **/
 
 gulp.task('copy', function() {
-    gulp.src('src/**/*.html')
-    .pipe(gulp.dest('dist'));
-    // gulp.src('src/lib/**/*')
-    // .pipe(gulp.dest('dist/lib'));
+    gulp.src('src/public/views/**/*.html')
+    .pipe(gulp.dest('dist/public/views'));
+    gulp.src('src/public/lib/**/*')
+    .pipe(gulp.dest('dist/public/lib'));
 });
 
 
@@ -135,8 +150,8 @@ gulp.task('copy', function() {
 * - Watchs for file changes for images, scripts and sass/css
 *
 **/
-gulp.task('default', ['sass', 'scripts', 'images', 'copy', 'browser-sync'], function () {
-  gulp.watch('src/assets/css/**/*.scss', ['sass']);
+gulp.task('default', ['sass', 'scripts', 'images', 'copy', 'browser-sync'], function() {
+  gulp.watch('src/public/assets/scss/**/*.scss', ['sass']);
   gulp.watch('src/**/*.js', ['scripts']);
   gulp.watch('src/assets/images/*', ['images']);
   gulp.watch('src/**/*.html', ['copy']);

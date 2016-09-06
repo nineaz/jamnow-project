@@ -1,0 +1,57 @@
+<div class="row" ng-controller="JamController as jamCtrl">
+  <form class="col s12">
+    <div class="row newjam-card-black">
+      <h3>Créer une Jam</h3>
+      <div class="file-field input-field col s12">
+      <div class="btn-large waves-effect waves-light pink">
+        <i class="large material-icons">add_a_photo</i>
+        <span>Ajouter une photo</span>
+        <input type="file">
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text">
+      </div>
+    </div>
+      <div class="input-field col s12">
+        <textarea id="textarea1" class="materialize-textarea" ng-model="jamCtrl.name"></textarea>
+        <label for="textarea1">Nom de la Jam</label>
+      </div>
+      <div class="input-field col s12">
+        <textarea id="textarea1" class="materialize-textarea" length="144" ng-model="jamCtrl.description"></textarea>
+        <label for="textarea1">Ajouter une description. (144 caractères maximum)</label>
+      </div>
+    </div>
+      <div class="row card-jam newjam-card">
+        <div class="input-field col s12">
+            <i class="material-icons prefix">date_range</i>
+            <input id="icon_prefix" type="date" class="datepicker" ng-model="jamCtrl.date">
+      </div>
+        <div class="input-field col s12">
+            <i class="material-icons prefix">schedule</i>
+            <input id="icon_prefix" type="text" class="validate" ng-model="jamCtrl.hour">
+            <label for="icon_prefix">Heure</label>
+      </div>
+      <div class="input-field col s12">
+          <i class="material-icons prefix">location_on</i>
+          <input id="icon_prefix" type="text" class="validate" ng-model="jamCtrl.location">
+          <label for="icon_prefix">Endroit</label>
+      </div>
+      <div class="input-field col s12">
+        <i class="material-icons prefix">people</i>
+        <input id="icon_prefix" type="text" class="validate" ng-model="jamCtrl.limit">
+        <label for="icon_prefix">Nombre maximum de participants</label>
+      </div>
+      <div class="col s6 offset-s6">
+      <button class="btn waves-effect waves-light pink" type="submit" name="action" ng-click="jamCtrl.addJam()">Envoyer
+      <i class="material-icons right">send</i>
+    </div>
+</button>
+  </form>
+</div>
+
+
+
+
+
+
+  <div class="bg-img-newjam"></div>

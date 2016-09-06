@@ -1,0 +1,177 @@
+// DESKTOP VERSION
+.home-background {
+		background-image:url('../images/bg1.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		position: fixed;
+		top: 0;
+		right: 0;
+		height: 100%;
+		width: 100%;
+		z-index: -1;
+}
+
+.bg-img-pourquoi-home {
+	background-image: url("../images/bg8.jpg");
+	height: 400px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+}
+
+.round-bg-num-cmt-home {
+	background-color: #b71c1c;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	margin: 0 auto;
+}
+
+
+
+
+.bg-img-inscription1 {
+	background-image:url('../images/bg5.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+.bg-img-inscription2 {
+  background-image: url('../images/bg6.jpg');
+  height: 600px;
+}
+
+.bg-img-inscription3 {
+  background-image: url('../images/bg4.jpg');
+  height: 600px;
+}
+
+// .bg-img-inscription3 {
+// 	background-image:url('../images/bg8.jpg');
+// 	background-repeat: no-repeat;
+// 	background-position: center;
+// 	background-size: cover;
+// 	position: fixed;
+// 	top: 0;
+// 	left: 0;
+// 	height: 100%;
+// 	width: 100%;
+// 	z-index: -1;
+// }
+
+.bg-img-jam {
+	background-image:url('../images/bg7.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+
+
+.page-connexion-background {
+	background-image: url('../images/bg5.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+.bg-img-newjam {
+	background-image:url('../images/bg3.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+.bg-img-joinjam {
+	background-image:url('../images/bg2.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+
+.container-cmt-home {
+	background-image: url('../images/bg7.jpg');
+}
+
+.bg-img-profil {
+	background-image:url('../images/bg2.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+.white-background {
+	background-color: white;
+}
+.contact-background {
+	background-image:url('../images/bg5.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+
+
+
+// MOBIL VERSION
+@media(max-width: 732px) {
+	// .home-background{
+	// 	background-image:url('../images/bg8.jpg');
+	// 	background-repeat: no-repeat;
+	// 	background-position: center;
+	// 	background-size: cover;
+	// 	position: fixed;
+	// 	top: 0;
+	// 	right: 0;
+	// 	height: 100%;
+	// 	width: 100%;
+	// 	z-index: -1;
+	// }
+
+}
